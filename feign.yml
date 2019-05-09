@@ -1,9 +1,21 @@
 spring:
   application:
-    name: feign
+   name: discovery
+  datasource:
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/yft?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
 server:
   port: 3001
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+   serviceUrl:
+    defaultZone: http://127.0.0.1:1001/eureka/
+mybatis:
+  mapperLocations: classpath*:mybatis/mapper-*.xml
+  typeAliasesPackage: com.jk.feign.model
+
