@@ -18,4 +18,4 @@ eureka:
 mybatis:
   mapperLocations: classpath*:mybatis/mapper-*.xml
   typeAliasesPackage: com.jk.feign.model
-msg:123
+msg: 123
