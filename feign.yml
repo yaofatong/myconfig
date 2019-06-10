@@ -1,6 +1,6 @@
 spring:
   application:
-    name: feign
+   name: feign
   datasource:
     name: mydb
     type: com.alibaba.druid.pool.DruidDataSource
